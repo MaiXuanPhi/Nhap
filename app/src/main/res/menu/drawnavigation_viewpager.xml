@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:title="Fragmnet 1"
+            android:id="@+id/it_fragment1"/>
+        <item android:title="Fragment 2"
+            android:id="@+id/it_fragment2"/>
+        <item android:title="Fragment part 2">
+            <menu>
+                <item android:title="Frgament 3"
+                    android:id="@+id/it_fragment3"/>
+            </menu>
+        </item>
+    </group>
+</menu>

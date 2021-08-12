@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FragmentMainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/leftfragment"
+        android:name="com.example.nhap.fragment.LeftFragment"
+        android:layout_width="197dp"
+        android:layout_height="333dp"
+        android:layout_marginEnd="16dp"
+        android:background="#397871"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightfragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/rightfragment"
+        android:name="com.example.nhap.fragment.RightFragment"
+        android:layout_width="0dp"
+        android:layout_height="338dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leftfragment"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_fr22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="36dp"
+        android:text="gragment2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftfragment" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavi"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/bt_fr22"
+        app:menu="@menu/menu_bottomnavigator"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/bt_truyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="32dp"
+        android:text="Truyền"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/bt_fr22"
+        app:layout_constraintTop_toBottomOf="@+id/rightfragment" />
+
+    <EditText
+        android:id="@+id/ed_truyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomnavi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

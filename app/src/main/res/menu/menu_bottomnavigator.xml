@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/it_rfr"
+        android:title="RightFragment"
+        android:icon="@android:drawable/ic_lock_lock"/>
+
+    <item android:id="@+id/it_rfr2"
+        android:title="RightFragment2"
+        android:icon="@android:drawable/ic_input_delete"/>
+</menu>
