@@ -3,13 +3,10 @@ package com.example.nhap.Notification;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.core.app.TaskStackBuilder;
-import androidx.fragment.app.FragmentActivity;
 import androidx.media.app.NotificationCompat;
 
 import android.app.Notification;
-import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -21,8 +18,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RemoteViews;
 
-import com.example.nhap.BaoThucMainActivity;
-import com.example.nhap.MainActivity;
 import com.example.nhap.R;
 import com.example.nhap.fragment.FragmentMainActivity;
 

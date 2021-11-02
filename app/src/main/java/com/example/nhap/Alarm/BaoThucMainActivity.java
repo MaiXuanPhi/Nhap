@@ -1,7 +1,6 @@
-package com.example.nhap;
+package com.example.nhap.Alarm;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -11,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
+
+import com.example.nhap.R;
 
 import java.util.Calendar;
 
@@ -36,7 +37,7 @@ public class BaoThucMainActivity extends AppCompatActivity {
         calendar = Calendar.getInstance();
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE); // cho phép try cập vào hệ thống báo động của máy
 
-        Intent intent = new Intent(BaoThucMainActivity.this,AlarReceiver.class);
+        Intent intent = new Intent(BaoThucMainActivity.this, AlarReceiver.class);
 
         btnHenGio.setOnClickListener(new View.OnClickListener() {
             @Override

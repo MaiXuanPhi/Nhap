@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nhap">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".Notification.MyApplication"
         android:allowBackup="true"
@@ -10,18 +16,51 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Nhap">
-        <activity android:name=".Notification.NotificationMainActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".YoutubeLayout.YoutubeActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".zingmp3.ZingMp3Service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".zingmp3.ZingMp3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".imageFile.ImageActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".imageFile.ImageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DeleteEditAddRecyclerView.RecyclerActitity"
+            android:exported="true" />
+        <activity
+            android:name=".splash.SplashScreen"
+            android:exported="true" />
+        <activity
+            android:name=".button_animation.ButtonAnimation"
+            android:exported="true" />
+        <activity
+            android:name=".recyclerviewhozitatol.RecylerviewHz"
+            android:exported="true" />
+        <activity
+            android:name=".Notification.NotificationMainActivity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".NavigationDrawerTablayoutViewPager.NavigationDrawerTablayoutViewPagerMainActivity" />
         <activity android:name=".Fragment_Tablayout_Viewpager.FragmentTablayoutViewpagerMainActivity" />
-        <activity android:name=".fragment.FragmentMainActivity"
+        <activity
+            android:name=".fragment.FragmentMainActivity"
+            android:excludeFromRecents="true"
             android:launchMode="singleTask"
-            android:taskAffinity=""
-            android:excludeFromRecents="true"/>
-        <activity android:name=".BaoThucMainActivity"
+            android:taskAffinity="" />
+        <activity
+            android:name=".Alarm.BaoThucMainActivity"
+            android:excludeFromRecents="true"
             android:launchMode="singleTask"
-            android:taskAffinity=""
-            android:excludeFromRecents="true"/>
+            android:taskAffinity="" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,14 +69,14 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".AlarReceiver">
+        <receiver android:name=".Alarm.AlarReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
         <service
-            android:name=".Music"
+            android:name=".Alarm.Music"
             android:enabled="true" />
     </application>
 

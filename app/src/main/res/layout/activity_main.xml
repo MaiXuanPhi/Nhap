@@ -36,4 +36,46 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Notification" />
+
+    <Button
+        android:id="@+id/bt_recyclerviewhz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="recyclerview hozitol" />
+
+    <Button
+        android:id="@+id/buttonanimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button Animation" />
+
+    <Button
+        android:id="@+id/bt_splashscreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="splash screen" />
+
+    <Button
+        android:id="@+id/btnEditDeleteAddRecylerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Add Delete Recycler view" />
+
+    <Button
+        android:id="@+id/btnImageActivyti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xử lý hình ảnh" />
+
+    <Button
+        android:id="@+id/btnZingMp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zing mp3"/>
+
+    <Button
+        android:id="@+id/btnYoutube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Layout youtube"/>
 </LinearLayout>

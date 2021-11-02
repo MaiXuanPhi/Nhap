@@ -3,9 +3,35 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/drawable/button_background.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/drawable/button_cardview.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/drawable/button_selecter.xml" value="0.20462962962962963" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/drawable/button_selecter2.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/drawable/ic_back.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/drawable/ic_baseline_notifications_active_24.xml" value="0.21481481481481482" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/drawable/ic_baseline_wifi_24.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/drawable/ic_music.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/drawable/ic_next.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/drawable/ic_pause.xml" value="0.2203125" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/drawable/ic_play.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/activity_button_animation.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/activity_fragment_main.xml" value="0.20153985507246377" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/activity_image.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/activity_image2.xml" value="0.129981884057971" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/activity_notification_main.xml" value="0.20153985507246377" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/activity_recycler_actitity.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/activity_recylerview_hz.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/activity_youtube.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/activity_zing_mp3.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/example_item.xml" value="0.22684310018903592" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/item_image.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/layout/layout_custom_notification.xml" value="0.20153985507246377" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/menu/menu_bottomnavigator.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/Nhap/app/src/main/res/menu/menu_youtube.xml" value="0.25" />
       </map>
     </option>
   </component>

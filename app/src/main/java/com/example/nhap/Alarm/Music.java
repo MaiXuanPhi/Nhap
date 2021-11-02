@@ -1,4 +1,4 @@
-package com.example.nhap;
+package com.example.nhap.Alarm;
 
 import android.app.Notification;
 import android.app.Service;
@@ -16,6 +16,7 @@ import androidx.annotation.Nullable;
 import androidx.core.app.NotificationManagerCompat;
 
 import com.example.nhap.Notification.MyApplication;
+import com.example.nhap.R;
 
 public class Music extends Service {
     MediaPlayer mediaPlayer;
@@ -28,7 +29,7 @@ public class Music extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.kotlinicon);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.kotlinicon);
         MediaSession mediaSession = new MediaSession(this, "Tag");
         Notification notification = new Notification.Builder(this,MyApplication.CHANNEL_ID_3)
                 .setSmallIcon(R.drawable.ic_music)
