@@ -59,7 +59,6 @@ public class ZingMp3Service extends Service {
 
 //        mediaPlayer.getDuration();
 //        mediaPlayer.seekTo(1); // vi tri cua bai hat
-
     }
 
     @Override
