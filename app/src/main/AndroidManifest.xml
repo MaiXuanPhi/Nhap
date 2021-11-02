@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nhap">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".YoutubeLayout.YoutubeActivity"
             android:exported="true" />
 
