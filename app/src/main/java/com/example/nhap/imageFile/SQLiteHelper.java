@@ -31,11 +31,12 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE IF NOT EXISTS FOOD (ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME VARCHAR, PRICE VARCHAR, IMAGE BLOB)");
-        p = db.compileStatement("insert into FOOD(NAME, PRICE, IMAGE) values(?, ?, ?)");
-
-        insertDataFood("a1", "834756834", R.drawable.a1);
+        p = db.compileStatement("insert into FOOD(NAME, PRICE, IMAGE) values('a3', '586384576348', ?)");
+        insertDataFood("a1", "834756834", R.drawable.a3);
+        p = db.compileStatement("insert into FOOD(NAME, PRICE, IMAGE) values('a2', '586384576348', ?)");
         insertDataFood("a2", "834756834", R.drawable.a2);
-        insertDataFood("a3", "834756834", R.drawable.a3);
+        p = db.compileStatement("insert into FOOD(NAME, PRICE, IMAGE) values('a1', '586384576348', ?)");
+        insertDataFood("a3", "834756834", R.drawable.a1);
     }
 
     public void insertDataFood(String name, String price, int img) {
@@ -44,9 +45,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         bitmap.compress(Bitmap.CompressFormat.PNG, 0, stream);
         byte[] data = stream.toByteArray();
 
-        p.bindString(1, name);
-        p.bindString(2, price);
-        p.bindBlob(3, data);
+        p.bindBlob(1, data);
         p.execute();
     }
 
