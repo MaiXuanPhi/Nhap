@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.example.nhap.Alarm.BaoThucMainActivity;
 import com.example.nhap.DeleteEditAddRecyclerView.RecyclerActitity;
+import com.example.nhap.VanTayActivity.VanTayActivities;
 import com.example.nhap.YoutubeLayout.YoutubeActivity;
 import com.example.nhap.button_animation.ButtonAnimation;
 import com.example.nhap.fragment.FragmentMainActivity;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button bt_bao_thuc, bt_fragment, bt_fragment_tablayout_viewpager, bt_drawnavigation_tablayout_viewpager,
     bt_notification,bt_recyclerviewhz, bt_animation, bt_splashscreen, bt_editDeleteAddRecyclerView,
-    btnImageActivity, btnZingmp3, btnLayoutYoutube;
+    btnImageActivity, btnZingmp3, btnLayoutYoutube, bt_vantay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         btnImageActivity = findViewById(R.id.btnImageActivyti);
         btnZingmp3 = findViewById(R.id.btnZingMp3);
         btnLayoutYoutube = findViewById(R.id.btnYoutube);
+        bt_vantay = findViewById(R.id.bt_vantay);
 
         bt_bao_thuc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -136,6 +138,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, YoutubeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        bt_vantay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, VanTayActivities.class);
                 startActivity(intent);
             }
         });
