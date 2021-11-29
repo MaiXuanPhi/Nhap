@@ -18,6 +18,7 @@ import com.example.nhap.NavigationDrawerTablayoutViewPager.NavigationDrawerTabla
 import com.example.nhap.Notification.NotificationMainActivity;
 import com.example.nhap.imageFile.ImageActivity;
 import com.example.nhap.recyclerviewhozitatol.RecylerviewHz;
+import com.example.nhap.searchView.SearchViewActivity;
 import com.example.nhap.splash.SplashScreen;
 import com.example.nhap.zingmp3.ZingMp3Activity;
 
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button bt_bao_thuc, bt_fragment, bt_fragment_tablayout_viewpager, bt_drawnavigation_tablayout_viewpager,
     bt_notification,bt_recyclerviewhz, bt_animation, bt_splashscreen, bt_editDeleteAddRecyclerView,
-    btnImageActivity, btnZingmp3, btnLayoutYoutube, bt_vantay;
+    btnImageActivity, btnZingmp3, btnLayoutYoutube, bt_vantay, bt_sreach;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btnZingmp3 = findViewById(R.id.btnZingMp3);
         btnLayoutYoutube = findViewById(R.id.btnYoutube);
         bt_vantay = findViewById(R.id.bt_vantay);
+        bt_sreach = findViewById(R.id.bt_searchView);
 
         bt_bao_thuc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -146,6 +148,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, VanTayActivities.class);
+                startActivity(intent);
+            }
+        });
+
+        bt_sreach.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SearchViewActivity.class);
                 startActivity(intent);
             }
         });
